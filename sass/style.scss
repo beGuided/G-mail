@@ -1,0 +1,160 @@
+@import 'config';
+@import 'mainPage';
+
+:root{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: border-box;
+    color: $font-color;
+}
+
+body{
+    margin: 0;
+    padding:0;
+ 
+}
+hr{
+    border-color: rgba(255, 251, 251, 0.405);
+}
+a{
+    text-decoration: none;
+}
+// .icon{
+//     fo;
+// }
+.material-icons{
+    font-size: 19px;
+
+}
+
+.top-nav{
+
+    display: grid;
+    grid-template-columns:2fr 8fr 2fr;
+    padding: 10px;
+    align-items: center;
+    
+    .form{
+        border: 1px solid rgb(240, 239, 239);
+        border-radius: 6px;
+         width: 80%;
+        display: flex;
+        // height:5vh ;
+        background-color: $tertiary-color;
+        align-items: center;
+        padding: 0 10px;
+      
+      input[type="text"]{
+            border: none;
+            background-color: $tertiary-color;
+            width: 95%;   
+            height: 7vh;
+            padding: 0 5px;
+            &:focus-within{
+                outline: none;
+               
+               }
+        }
+        .push{
+            margin-left: auto
+            ;
+        }
+    }
+    .push{
+       float: right;
+       padding: 0 5px;
+    }
+}
+
+.main-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+
+aside{
+    font-size:0.875rem ;
+    margin: 1em .5em;
+   .button{
+        background-color: $primary-color;
+        border-radius: 30px;
+        border: 1px solid rgb(233, 229, 229);
+        padding: 1px 5px;
+        max-width: 150px;
+        height: 50px;
+        display: flex;
+        margin-bottom: 1em;
+
+        &:hover{
+            box-shadow: 0px 2px 5px 0px #888888;
+        }
+
+
+        p{
+            padding: 2px;
+        }
+       
+    }
+    .user-img{
+        font-size: 0.625rem;
+        display: grid;
+        grid-template-columns:1fr 2fr ;
+        padding: 0 50px 0 10px;
+
+        img{
+            border: 2px solid $secondary-color;
+            background-color: $secondary-color;
+            border-radius: 50px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .inbox {
+        background-color: rgb(253, 108, 108);
+        border-radius: 15px 50px 30px 5px;
+    }
+    .social{
+        margin: 0 3em;
+        i{
+            padding: 2px;
+        }
+        
+    }
+
+}
+.tb-container{
+    border-top:1px solid;
+    border-bottom:1px solid ;
+    border-color: rgb(232, 229, 229);
+    height: 45vh;
+    overflow: auto;     
+    table{
+        border-collapse: collapse;
+        tr:hover { 
+            // border: 1px solid grey;
+            border-radius: 2px;
+            background-color:rgb(146, 245, 146); 
+            // box-shadow: 2px 2px 2px 1px #888888;
+            border-radius: 15px 50px 30px 5px;
+          
+        }
+            td{    
+                padding: .5em 0;
+
+                a{
+                    text-decoration: none;
+                }
+               
+            }
+           
+            .tb-padding{
+                padding: 0 1em;
+            }
+    
+    }
+    
+}
+@import 'mediaQuery';
