@@ -22,11 +22,11 @@ hr{
 a{
     text-decoration: none;
 }
-// .icon{
-//     fo;
-// }
+
 .material-icons{
-    font-size: 19px;
+    font-size: 20px;
+    // color:lightned($font-color 50%);
+    color: grey;
 
 }
 
@@ -36,13 +36,19 @@ a{
     grid-template-columns:2fr 8fr 2fr;
     padding: 10px;
     align-items: center;
+    .menu{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        padding-left: 10px;
+    }
     
     .form{
         border: 1px solid rgb(240, 239, 239);
         border-radius: 6px;
          width: 80%;
         display: flex;
-        // height:5vh ;
         background-color: $tertiary-color;
         align-items: center;
         padding: 0 10px;
@@ -76,17 +82,17 @@ a{
 
 
 aside{
-    font-size:0.875rem ;
+    font-size:0.937rem ;
     margin: 1em .5em;
    .button{
         background-color: $primary-color;
         border-radius: 30px;
-        border: 1px solid rgb(233, 229, 229);
         padding: 1px 5px;
         max-width: 150px;
         height: 50px;
         display: flex;
         margin-bottom: 1em;
+        box-shadow: 0px 2px 2px 0px #888888;
 
         &:hover{
             box-shadow: 0px 2px 5px 0px #888888;
@@ -113,8 +119,14 @@ aside{
         }
     }
     .inbox {
-        background-color: rgb(253, 108, 108);
+        background-color: #FCE8E6;
         border-radius: 15px 50px 30px 5px;
+       td>a{
+           color: #DB3D32;
+           .icon{
+               color: #DB3D32;
+           }
+       }
     }
     .social{
         margin: 0 3em;
@@ -133,26 +145,27 @@ aside{
     overflow: auto;     
     table{
         border-collapse: collapse;
+        width: 100%;
         tr:hover { 
-            // border: 1px solid grey;
             border-radius: 2px;
-            background-color:rgb(146, 245, 146); 
-            // box-shadow: 2px 2px 2px 1px #888888;
-            border-radius: 15px 50px 30px 5px;
-          
+            background-color:rgba(159, 163, 159, 0.33); 
+            border-radius: 15px 50px 30px 5px;      
         }
+       
             td{    
-                padding: .5em 0;
-
+                padding: .4em 2px;
+                width: 20px;
                 a{
                     text-decoration: none;
-                }
-               
+                }              
+            }
+            td:last-child{
+                border-radius: 0 20px 20px 0px; 
             }
            
-            .tb-padding{
-                padding: 0 1em;
-            }
+          .tb-padding{
+              padding-right: 20px
+          }
     
     }
     
