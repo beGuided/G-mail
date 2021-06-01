@@ -1,5 +1,5 @@
 main {
-  font-size: 0.937rem; }
+  font-size: 0.875rem; }
   main .row {
     margin: 10px 0; }
   main .nav ul {
@@ -11,6 +11,9 @@ main {
       padding-right: 1em; }
     main .nav ul .push {
       margin-left: auto; }
+  main .msg {
+    color: grey;
+    font-weight: 400; }
   main table {
     border-collapse: collapse;
     width: 100%; }
@@ -31,7 +34,7 @@ main {
 
 :root {
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box; }
 
 * {
@@ -89,7 +92,7 @@ a {
   grid-template-columns: 2fr 10fr; }
 
 aside {
-  font-size: 0.937rem;
+  font-size: 0.875rem;
   margin: 1em .5em; }
   aside .button {
     background-color: white;
@@ -164,7 +167,7 @@ aside {
 /* ipad */
 @media (max-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 7500px;
     margin: 0 auto; }
 
   .logo {

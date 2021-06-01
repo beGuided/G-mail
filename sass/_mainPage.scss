@@ -1,5 +1,5 @@
 main{
-    font-size:0.937rem ;
+    font-size:0.875rem ;
 
     .row{
 
@@ -22,7 +22,10 @@ main{
         
     }
 
-
+.msg{
+    color: grey;
+    font-weight: 400;
+}
     table{
         border-collapse: collapse;
         width: 100%;
@@ -34,7 +37,7 @@ main{
         td {
             padding: 10px 0;
             border-bottom: 1px solid rgb(226, 223, 223);
-            font-weight: bold;
+             font-weight: bold;
           }
           tr:hover { 
             border: 1px solid grey;
@@ -45,12 +48,8 @@ main{
         }
         td a { 
         display: block; 
-        text-decoration: none;
-       
-        // scale: ;
-      
+        text-decoration: none;      
 }
-         
          
     }
     .tb-padding{
